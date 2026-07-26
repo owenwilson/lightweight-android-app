@@ -8,23 +8,37 @@
 - let's download and build dependencies
 
 ```sh
-gradle wrapper --gradle-version 8.7 
+./gradlew wrapper --gradle-version 8.7 
 ```
 
 - compile and install
 
 ```sh
-gradle clean
-gradle installDebug
+./gradlew clean
+./gradlew installDebug
 ```
 
 - additional example
+
 ```sh
-gradle installDebug --continous
-gradle installDebug -t
+./gradlew installDebug --continous
+./gradlew installDebug -t
 ```
 
-## 
+- mode watch
+
+```sh
+./gradlew installDebug --continous
+adb shell am start -n com.myapp.hello/.MainActivity
+```
+
+- add keystore
+
+```sh
+./gradlew assembleRelease
+./gradlew bundleRelease
+```
 
 ## references
 
+- please check out [can you really develop android apps without android studio](https://medium.com/@sdiony/can-you-really-develop-android-apps-without-android-studio-cdd9b951de65)
