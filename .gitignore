@@ -1,0 +1,47 @@
+# Archivos específicos de Android Studio / IDE
+*.iml
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# automatically generated gradle files
+.gradle/
+build/
+app/build/
+gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# local configuration files (contain paths specific to your machine)
+local.properties
+
+# gradle cache files
+.cache/
+gradle-app.setting
+
+# dependencies and binary files
+*.apk
+*.aar
+*.jar
+*.dex
+*.class
+*.log
+
+# operating system files
+.DS_Store
+Thumbs.db
+
+# code coverage files
+*.ec
+
+# signature files
+*.keystore
+*.jks
+google-services.json
+**/google-services.json
+
+# test reports
+**/build/reports/
+**/build/test-results/
+**/build/outputs/
