@@ -5,9 +5,29 @@
 
 ## setup project
 
-- let's download and build dependencies
+- install android-tools
 
 ```sh
+sudo dnf install -y android-tools
+```
+
+- android emulator, if you need more information, please check out [android-sdk-for-linux](https://github.com/owenwilson/android-sdk-for-linux)
+
+```sh
+android emulator start small_phone
+```
+
+- verify devices
+
+```sh
+adb devices
+```
+
+- let's download and dependencies
+
+```sh
+gradle wrapper --gradle-version 8.7
+# or
 ./gradlew wrapper --gradle-version 8.7 
 ```
 
@@ -18,7 +38,9 @@
 ./gradlew installDebug
 ```
 
-- additional example
+![app hello in android emulator](./img-run-app-hello-in-androi-emulator.png)
+
+- additional example (optional)
 
 ```sh
 ./gradlew installDebug --continous
