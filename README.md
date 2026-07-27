@@ -40,6 +40,13 @@ gradle wrapper --gradle-version 8.7
 
 ![app hello in android emulator](./img-run-app-hello-in-androi-emulator.png)
 
+- stop android emulator
+
+```sh
+adb devices
+android emulator stop emulator-5554
+```
+
 - additional example (optional)
 
 ```sh
